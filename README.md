@@ -9,7 +9,9 @@ privacy.html    Privacy Policy   → App Store Connect "Privacy Policy URL" + pa
 terms.html      Terms of Use     → paywall link (references Apple's standard EULA)
 support.html    Support + FAQ    → App Store Connect "Support URL"
 404.html        Not-found page
-assets/         CSS, JS, images
+style.css       Styles
+main.js         Page behavior
+*.png *.jpg     Icons, swords, and screenshots, beside the HTML
 ```
 
 ## Preview locally
