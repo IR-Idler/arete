@@ -17,42 +17,27 @@ main.js         Page behavior
 ## Preview locally
 
 ```sh
-cd ~/Desktop/arete-website
+cd "/Volumes/Video Resources & Archive/Dev/Arete App/Arete Marketing/arete-website"
 python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000.
 
-## Host on GitHub Pages
+## Hosting
 
-1. Create a new **public** repository on GitHub named **`arete`** (github.com/new).
-2. Upload this folder's contents. Either drag the files into the repo's
-   "Add file › Upload files" page, or from Terminal:
+Live on GitHub Pages from the public repo `IR-Idler/arete` (branch `main`, root folder):
 
-   ```sh
-   cd ~/Desktop/arete-website
-   git init
-   git add .
-   git commit -m "Arete website"
-   git branch -M main
-   git remote add origin https://github.com/IR-Idler/arete.git
-   git push -u origin main
-   ```
-
-3. On GitHub: **Settings › Pages › Build and deployment**, set Source to
-   **Deploy from a branch**, Branch **main**, folder **/ (root)**, then Save.
-4. After a minute the site is live at:
-
-   - https://ir-idler.github.io/arete/
-   - https://ir-idler.github.io/arete/privacy.html
-   - https://ir-idler.github.io/arete/terms.html
-   - https://ir-idler.github.io/arete/support.html
+- https://ir-idler.github.io/arete/
+- https://ir-idler.github.io/arete/privacy.html
+- https://ir-idler.github.io/arete/terms.html
+- https://ir-idler.github.io/arete/support.html
 
 The app's paywall links to the privacy URL above. If you use a different repo name
 or a custom domain, update `privacyURL` in `PaywallView.swift` and the
 `<base href="/arete/">` line in `404.html`.
 
-## After launch
+## App Store link
 
-Replace the "Coming soon to the App Store" button in `index.html` (search for
-`#download`) with your App Store link, e.g. `https://apps.apple.com/app/id0000000000`.
+The download button in `index.html` and the Smart App Banner (`apple-itunes-app` meta tag)
+point to `https://apps.apple.com/app/id6811845817`. That link opens the visitor's own
+country store.
