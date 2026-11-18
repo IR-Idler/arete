@@ -320,3 +320,10 @@ details.faq p { margin: 12px 0 2px; }
   .splash-word { opacity: 1; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Footer: "Made by Brighter World Labs" */
+.footer-left { display: flex; align-items: center; gap: 8px 20px; flex-wrap: wrap; }
+footer .maker { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+footer .maker svg { width: 28px; height: 28px; margin: -4px -2px; flex: none; }
+footer .maker span { color: var(--text); font-weight: 600; }
+footer .maker:hover span { text-decoration: underline; }
